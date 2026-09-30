@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AAA Hospital | Complete Healthcare & Ayurveda</title>
+    <meta name="description" content="AAA Hospital provides complete healthcare, compassionate care with modern hospital facilities, Ayurveda, and Kerala Panchakarma in Jhajjar, Haryana.">
+    <meta property="og:title" content="AAA Hospital | Complete Healthcare & Ayurveda">
+    <meta property="og:description" content="Modern hospital facilities with Ayurveda and Kerala Panchakarma, all under one roof.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png">
+
+    <!-- Schema.org for Hospital -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hospital",
+      "name": "AAA Hospital",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "232, Subhash Nagar, Near Civil Hospital Back Gate",
+        "addressLocality": "Jhajjar",
+        "addressRegion": "Haryana",
+        "postalCode": "124103",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-9728030109",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "medicalSpecialty": ["Ayurvedic", "Emergency", "Physiotherapy"]
+    }
+    </script>
+
+    <!-- Font Awesome & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="scroll-progress" id="progressBar"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="images/logo.png" alt="Loading" class="preloader-img" onerror="this.outerHTML='<h2 style=\'color: var(--primary);\'><i class=\'fa-solid fa-leaf\'></i> AAA Hospital</h2>'">
+    </div>
+
+    <!-- 1. Top Bar & Header -->
+    <div class="top-bar">
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; text-align: center;">
+                <span><i class="fa-solid fa-phone"></i> <a href="tel:9728030109">97280 30109</a></span>
+                <span style="margin:0 10px;" class="hide-mobile">|</span> 
+                <span><i class="fa-solid fa-clock"></i> Open 24 Hours</span>
+            </div>
+            <div class="top-bar-links">
+                <a href="#contact">Patients & Visitors</a>
+                <a href="#contact">Careers</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="home">
+        <div class="container navbar">
+            <a href="#home" class="logo">
+                <img src="images/logo.png" alt="AAA Hospital - Adiyogi Arogya Avenue" class="logo__img" width="180" height="60" onerror="this.outerHTML='<span style=\'font-weight: 700; font-size: 1.5rem; color: var(--primary); font-family: var(--font-heading);\'><i class=\'fa-solid fa-leaf text-gold\'></i> AAA Hospital</span>'">
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#panchakarma">Panchakarma</a>
+                <a href="#doctors">Doctors</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">Book Appointment</a>
+            </div>
+
+            <!-- Hamburger (Mobile) -->
+            <div class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Slide-in Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#panchakarma">Panchakarma</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-block">Book Appointment</a>
+    </div>
+
+    <!-- 2. Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-zoom"></div>
+        <div class="container hero-layout">
+            <div class="hero-content">
+                <span class="badge" style="background-color: #E2F0E7; color: #1F4D2E;">Trusted Healthcare & Ayurveda Care</span>
+                <h1 style="margin-top: 1rem; margin-bottom: 1.5rem; line-height: 1.1;">Complete Healthcare,<br>Compassionate Care</h1>
+                <p style="font-size: 1.125rem; margin-bottom: 2rem;">Modern hospital facilities with Ayurveda and Kerala Panchakarma, all under one roof.</p>
+                
+                <div class="hero-trust">
+                    <div class="hero-trust-item"><i class="fa-solid fa-circle-check" style="color: #C9A24B;"></i> 24x7 Emergency</div>
+                    <div class="hero-trust-item"><i class="fa-solid fa-circle-check" style="color: #C9A24B;"></i> Ayurveda & Panchakarma</div>
+                    <div class="hero-trust-item"><i class="fa-solid fa-circle-check" style="color: #C9A24B;"></i> Modern Hospital Facilities</div>
+                </div>
+            </div>
+
+            <div class="appointment-bar">
+                <h3 class="mb-1" style="font-family: var(--font-heading); font-size: 1.75rem;">Quick Appointment</h3>
+                <form id="heroAppointmentForm" class="appointment-form-row">
+                    <div class="form-group form-group-sm">
+                        <select class="form-control" aria-label="Select Service">
+                            <option value="">Service</option>
+                            <option value="Ayurveda">Ayurveda</option>
+                            <option value="Panchakarma">Panchakarma</option>
+                            <option value="General">General</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <select class="form-control" aria-label="Select Doctor">
+                            <option value="">Doctor</option>
+                            <option value="Ayurveda">Ayurveda</option>
+                            <option value="General">General</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <input type="date" class="form-control" aria-label="Date">
+                    </div>
+                    <button type="submit" class="btn btn-secondary submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Overlapping Info Cards -->
+    <section class="container card-grid ">
+        <div class="info-card reveal-left">
+            <i class="fa-solid fa-truck-medical"></i>
+            <h3>Emergency Cases</h3>
+            <p>We are ready to handle emergencies 24/7 with our specialized team.</p>
+            <h4 class="text-primary"><a href="tel:9728030109">Call 97280 30109</a></h4>
+        </div>
+        <div class="info-card primary reveal-left">
+            <i class="fa-solid fa-user-doctor"></i>
+            <h3>Doctors Timetable</h3>
+            <p>Our specialists are available round the clock. Check our schedule.</p>
+            <a href="#doctors" class="text-gold" style="font-weight: 500;">View Schedule <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="info-card reveal-zoom">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Opening Hours</h3>
+            <p>We provide medical services and admission 24 hours a day, 7 days a week.</p>
+            <h4 class="text-primary">Open 24 Hours</h4>
+        </div>
+    </section>
+
+    <!-- 4. About Us -->
+    <section id="about" class="section">
+        <div class="container about-layout">
+            <div class="reveal-left">
+                <span class="section-label">Our Story</span>
+                <h2 class="text-primary">Compassionate Care Meets Traditional Wisdom</h2>
+                <p>At AAA Hospital, we seamlessly integrate the advancements of modern hospital facilities with the profound, time-tested wisdom of Ayurveda and Kerala Panchakarma. Our goal is to provide holistic, patient-centered care that addresses both the symptoms and the root cause of illness.</p>
+                <a href="#contact" class="btn btn-primary mt-2">Learn More</a>
+            </div>
+            <div class=" grid-2">
+                <div class="value-card reveal-right">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <div>
+                        <h4>Patient First</h4>
+                        <p style="font-size: 0.875rem; margin:0;">Your health and comfort are our highest priority.</p>
+                    </div>
+                </div>
+                <div class="value-card reveal-right">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div>
+                        <h4>Safety & Trust</h4>
+                        <p style="font-size: 0.875rem; margin:0;">Highest medical standards in a safe environment.</p>
+                    </div>
+                </div>
+                <div class="value-card reveal-right">
+                    <i class="fa-solid fa-leaf"></i>
+                    <div>
+                        <h4>Natural Healing</h4>
+                        <p style="font-size: 0.875rem; margin:0;">Ayurvedic principles for sustainable well-being.</p>
+                    </div>
+                </div>
+                <div class="value-card reveal-right">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <div>
+                        <h4>Expert Care</h4>
+                        <p style="font-size: 0.875rem; margin:0;">Dedicated professionals across multiple disciplines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Services -->
+    <section id="services" class="section bg-light">
+        <div class="container ">
+            <div class="text-center mb-3 reveal">
+                <span class="section-label">Departments</span>
+                <h2>Our Premium Services</h2>
+                <p>Comprehensive healthcare solutions under one roof.</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="service-card reveal-left">
+                    <div class="service-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>Ayurvedic Treatment</h3>
+                    <p>Authentic natural healing protocols for chronic ailments.</p>
+                </div>
+                <div class="service-card reveal-zoom">
+                    <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
+                    <h3>Kerala Panchakarma</h3>
+                    <p>Traditional detox therapies for body and mind rejuvenation.</p>
+                </div>
+                <div class="service-card reveal-right">
+                    <div class="service-icon"><i class="fa-solid fa-person-walking"></i></div>
+                    <h3>Physiotherapy</h3>
+                    <p>Expert rehabilitation and pain management therapies.</p>
+                </div>
+                <div class="service-card reveal-left">
+                    <div class="service-icon"><i class="fa-solid fa-hand-dots"></i></div>
+                    <h3>Acupressure</h3>
+                    <p>Natural pain relief and energy balancing techniques.</p>
+                </div>
+                <div class="service-card reveal-zoom">
+                    <div class="service-icon"><i class="fa-solid fa-x-ray"></i></div>
+                    <h3>X-Ray</h3>
+                    <p>Advanced diagnostic imaging services.</p>
+                </div>
+                <div class="service-card reveal-right">
+                    <div class="service-icon"><i class="fa-solid fa-baby-carriage"></i></div>
+                    <h3>Delivery & Birth Suite</h3>
+                    <p>Safe and comfortable maternity care facilities.</p>
+                </div>
+                <div class="service-card reveal-left">
+                    <div class="service-icon"><i class="fa-solid fa-scalpel-line-dashed"></i></div>
+                    <h3>Surgical Care</h3>
+                    <p>State-of-the-art operation facilities and expert surgeons.</p>
+                </div>
+                <div class="service-card reveal-zoom">
+                    <div class="service-icon"><i class="fa-solid fa-bed-pulse"></i></div>
+                    <h3>ICU</h3>
+                    <p>Intensive care unit with modern life-support systems.</p>
+                </div>
+                <div class="service-card reveal-right">
+                    <div class="service-icon"><i class="fa-solid fa-truck-medical"></i></div>
+                    <h3>24x7 Emergency</h3>
+                    <p>Immediate medical attention available round the clock.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Panchakarma -->
+    <section id="panchakarma" class="section bg-dark-green">
+        <div class="container">
+            <div class="text-center mb-3 reveal">
+                <span class="section-label">Specialized Care</span>
+                <h2>Authentic Kerala Panchakarma</h2>
+                <p>Experience the ultimate detoxification and rejuvenation through our traditional therapies.</p>
+            </div>
+
+            <div class="grid grid-4 ">
+                <div class="panch-card reveal-left">
+                    <h4>Kerala Panchakarma</h4>
+                    <p>Complete 5-step traditional detox process.</p>
+                </div>
+                <div class="panch-card reveal-zoom">
+                    <h4>Shirodhara</h4>
+                    <p>Warm herbal oil therapy for stress relief.</p>
+                </div>
+                <div class="panch-card reveal-right">
+                    <h4>Herbal Clinic</h4>
+                    <p>Customized herbal remedies by experts.</p>
+                </div>
+                <div class="panch-card reveal-left">
+                    <h4>Weight Loss</h4>
+                    <p>Natural Ayurvedic slimming protocols.</p>
+                </div>
+                <div class="panch-card reveal-zoom">
+                    <h4>Dry Needling</h4>
+                    <p>Targeted therapy for muscular pain.</p>
+                </div>
+                <div class="panch-card reveal-right">
+                    <h4>Diet Chart</h4>
+                    <p>Personalized diet plans for your dosha.</p>
+                </div>
+                <div class="panch-card reveal-left">
+                    <h4>Rejuvenation</h4>
+                    <p>Therapies to revitalize tissues and immunity.</p>
+                </div>
+                <div class="panch-card reveal-zoom">
+                    <h4>Detoxification</h4>
+                    <p>Internal cleansing to remove deep toxins.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-2 reveal">
+                <a href="#contact" class="btn btn-secondary">Book Panchakarma Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Why Choose Us -->
+    <section class="section">
+        <div class="container why-layout">
+            <div class="reveal-left">
+                <img src="images/quality-care.jpg" alt="Quality Care" style="border-radius: var(--radius-lg); box-shadow: var(--shadow); width: 100%; object-fit: cover;">
+            </div>
+            <div class="">
+                <span class="section-label">Core Strengths</span>
+                <h2 class="text-primary mb-2">Why Choose AAA Hospital?</h2>
+                <div class="feature-list">
+                    <div class="feature-item reveal-left">
+                        <div class="feature-icon"><i class="fa-solid fa-truck-medical"></i></div>
+                        <div>
+                            <h4>24x7 Emergency Care</h4>
+                            <p style="margin:0; font-size: 0.9rem;">Always ready to handle medical emergencies.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal-right">
+                        <div class="feature-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <div>
+                            <h4>Ayurveda + Modern Medicine</h4>
+                            <p style="margin:0; font-size: 0.9rem;">The best of both worlds under one roof.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal-left">
+                        <div class="feature-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                        <div>
+                            <h4>Experienced Team</h4>
+                            <p style="margin:0; font-size: 0.9rem;">Highly qualified specialists and staff.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal-right">
+                        <div class="feature-icon"><i class="fa-solid fa-broom"></i></div>
+                        <div>
+                            <h4>Clean and Safe Environment</h4>
+                            <p style="margin:0; font-size: 0.9rem;">Strict hygiene protocols maintained.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal-left">
+                        <div class="feature-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <div>
+                            <h4>Affordable Care</h4>
+                            <p style="margin:0; font-size: 0.9rem;">Premium healthcare accessible to all.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal-right">
+                        <div class="feature-icon"><i class="fa-solid fa-face-smile"></i></div>
+                        <div>
+                            <h4>Patient-Friendly Service</h4>
+                            <p style="margin:0; font-size: 0.9rem;">Compassionate and transparent communication.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. How It Works -->
+    <section class="section bg-light">
+        <div class="container ">
+            <div class="text-center mb-3 reveal">
+                <span class="section-label">Process</span>
+                <h2>Treatment Process</h2>
+                <p>A simple and transparent path to your recovery.</p>
+            </div>
+            <div class="grid grid-4">
+                <div class="process-step reveal-left">
+                    <div class="process-num">1</div>
+                    <h4>Book Appointment</h4>
+                    <p style="font-size: 0.9rem;">Schedule your visit online or via phone.</p>
+                </div>
+                <div class="process-step reveal-zoom">
+                    <div class="process-num">2</div>
+                    <h4>Consultation</h4>
+                    <p style="font-size: 0.9rem;">Detailed checkup by our expert specialists.</p>
+                </div>
+                <div class="process-step reveal-right">
+                    <div class="process-num">3</div>
+                    <h4>Personalised Plan</h4>
+                    <p style="font-size: 0.9rem;">Custom treatment integrating Ayurveda and modern medicine.</p>
+                </div>
+                <div class="process-step reveal-left">
+                    <div class="process-num">4</div>
+                    <h4>Follow-up Care</h4>
+                    <p style="font-size: 0.9rem;">Continuous monitoring for complete recovery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Doctors -->
+    <section id="doctors" class="section">
+        <div class="container ">
+            <div class="text-center mb-3 reveal">
+                <span class="section-label">Our Team</span>
+                <h2>Our Medical Experts</h2>
+                <p>Dedicated professionals committed to your health.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="doc-card reveal-left">
+                    <img src="images/doctor_ayurveda.jpg" alt="Ayurveda Specialist" class="doc-img" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="doc-info">
+                        <h4>Dr. Aditi Sharma</h4>
+                        <p>BAMS, Ayurveda Specialist</p>
+                        <div class="mt-2" style="display: flex; gap: 10px;">
+                            <button class="btn btn-secondary view-details-btn" style="flex: 1; padding: 0.8rem 0.5rem; font-size: 0.9rem;" data-name="Dr. Aditi Sharma" data-role="BAMS, Ayurveda Specialist" data-img="images/doctor_ayurveda.jpg" data-desc="Dr. Aditi is a highly experienced Ayurvedic practitioner specializing in Kerala Panchakarma and natural healing. With over 15 years of experience, she provides personalized dosha-based treatments for chronic ailments and wellness rejuvenation.">View Details</button>
+                            <a href="#contact" class="btn btn-outline" style="flex: 1; padding: 0.8rem 0.5rem; font-size: 0.9rem;">Book</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-card reveal-zoom">
+                    <img src="images/doctor_general.jpg" alt="General Physician" class="doc-img" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="doc-info">
+                        <h4>Dr. Rahul Verma</h4>
+                        <p>MBBS, MD - General Medicine</p>
+                        <div class="mt-2" style="display: flex; gap: 10px;">
+                            <button class="btn btn-secondary view-details-btn" style="flex: 1; padding: 0.8rem 0.5rem; font-size: 0.9rem;" data-name="Dr. Rahul Verma" data-role="MBBS, MD - General Medicine" data-img="images/doctor_general.jpg" data-desc="Dr. Rahul is a dedicated General Physician with expertise in diagnosing and treating a wide range of adult medical conditions. He emphasizes preventive healthcare and evidence-based medicine to ensure the best outcomes for his patients.">View Details</button>
+                            <a href="#contact" class="btn btn-outline" style="flex: 1; padding: 0.8rem 0.5rem; font-size: 0.9rem;">Book</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-card reveal-right">
+                    <img src="images/doctor_physio.jpg" alt="Physiotherapist" class="doc-img" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="doc-info">
+                        <h4>Dr. Sneha Patel</h4>
+                        <p>BPT, MPT - Orthopedics</p>
+                        <div class="mt-2" style="display: flex; gap: 10px;">
+                            <button class="btn btn-secondary view-details-btn" style="flex: 1; padding: 0.8rem 0.5rem; font-size: 0.9rem;" data-name="Dr. Sneha Patel" data-role="BPT, MPT - Orthopedics" data-img="images/doctor_physio.jpg" data-desc="Dr. Sneha is an expert Physiotherapist focused on rehabilitation, pain management, and mobility restoration. She uses advanced techniques like dry needling, manual therapy, and customized exercise plans for optimal patient recovery.">View Details</button>
+                            <a href="#contact" class="btn btn-outline" style="flex: 1; padding: 0.8rem 0.5rem; font-size: 0.9rem;">Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Facilities -->
+    <section id="facilities" class="section bg-light">
+        <div class="container ">
+            <div class="text-center mb-3 reveal">
+                <span class="section-label">Infrastructure</span>
+                <h2>Hospital Facilities</h2>
+                <p>Modern infrastructure for optimal patient care.</p>
+            </div>
+            <div class="grid facilities-grid text-center">
+                <div class="info-card reveal-right">
+                    <i class="fa-solid fa-bed-pulse text-primary mb-1" style="font-size: 2.5rem;"></i>
+                    <h4>ICU</h4>
+                </div>
+                <div class="info-card reveal-left">
+                    <i class="fa-solid fa-truck-medical text-primary mb-1" style="font-size: 2.5rem;"></i>
+                    <h4>24x7 Emergency</h4>
+                </div>
+                <div class="info-card reveal-zoom">
+                    <i class="fa-solid fa-kit-medical text-primary mb-1" style="font-size: 2.5rem;"></i>
+                    <h4>Operation Facility</h4>
+                </div>
+                <div class="info-card reveal-zoom">
+                    <i class="fa-solid fa-baby-carriage text-primary mb-1" style="font-size: 2.5rem;"></i>
+                    <h4>Delivery & Birth Suite</h4>
+                </div>
+                <div class="info-card reveal-right">
+                    <i class="fa-solid fa-x-ray text-primary mb-1" style="font-size: 2.5rem;"></i>
+                    <h4>X-Ray</h4>
+                </div>
+                <div class="info-card reveal-left">
+                    <i class="fa-solid fa-person-walking text-primary mb-1" style="font-size: 2.5rem;"></i>
+                    <h4>Physiotherapy</h4>
+                </div>
+                <div class="info-card reveal-zoom">
+                    <i class="fa-solid fa-bed text-primary mb-1" style="font-size: 2.5rem;"></i>
+                    <h4>Patient Care</h4>
+                </div>
+                <div class="info-card reveal-right">
+                    <i class="fa-solid fa-spa text-primary mb-1" style="font-size: 2.5rem;"></i>
+                    <h4>Panchakarma</h4>
+                </div>
+                <div class="info-card reveal-left">
+                    <i class="fa-solid fa-leaf text-primary mb-1" style="font-size: 2.5rem;"></i>
+                    <h4>Ayurvedic Treatment</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Testimonials -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-3 reveal">
+                <span class="section-label">Feedback</span>
+                <h2>Patient Testimonials</h2>
+            </div>
+            <div class="slider-container reveal">
+                <div class="slider-track">
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>"The Ayurvedic treatment combined with the modern facilities gave me complete relief from my chronic pain. Highly recommended."</p>
+                            <h4>Patient Name</h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>"The Panchakarma therapy was an amazing rejuvenating experience. The staff is extremely polite and caring."</p>
+                            <h4>Patient Name</h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>"Excellent emergency care. They acted swiftly and the hospital environment is very clean and peaceful."</p>
+                            <h4>Patient Name</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. FAQ -->
+    <section class="section bg-light">
+        <div class="container reveal">
+            <div class="text-center mb-3">
+                <span class="section-label">Questions</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <div class="faq-header">What are your hospital timings? <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-body">
+                        <p style="margin:0;">We are open 24 hours a day, 7 days a week for emergency services and admission. OPD timings vary by doctor.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">Is emergency care available at night? <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-body">
+                        <p style="margin:0;">Yes, our emergency department and ICU are fully operational 24/7 with specialized doctors on duty.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">Do I need an appointment for Panchakarma? <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-body">
+                        <p style="margin:0;">Yes, we recommend booking a consultation with our Ayurvedic experts to customize the Panchakarma therapy according to your specific needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">How can I book an appointment? <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-body">
+                        <p style="margin:0;">You can book an appointment by filling out the form on this website, which will directly connect you to us via WhatsApp, or you can call us at 97280 30109.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">Where is AAA Hospital located? <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-body">
+                        <p style="margin:0;">We are located at 232, Subhash Nagar, Near Civil Hospital Back Gate, Jhajjar, Haryana - 124103.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. Blog -->
+    <section id="blog" class="section">
+        <div class="container">
+            <div class="text-center mb-3 reveal">
+                <span class="section-label">Insights</span>
+                <h2>Health & Wellness Insights</h2>
+            </div>
+            <div class="search-bar reveal" style="max-width: 500px; margin: 0 auto 1.5rem;">
+                <input type="text" id="blogSearch" class="form-control" placeholder="Search articles..." aria-label="Search">
+            </div>
+            
+            <div class="category-chips reveal">
+                <div class="chip active">All</div>
+                <div class="chip">Health & Wellness</div>
+                <div class="chip">Preventive Healthcare</div>
+                <div class="chip">Panchakarma</div>
+                <div class="chip">Women's Health</div>
+                <div class="chip">Child Health</div>
+                <div class="chip">Lifestyle</div>
+                <div class="chip">Hospital Updates</div>
+            </div>
+
+            <div class="grid grid-3 ">
+                <!-- Blog 1 -->
+                <div class="blog-card reveal-left" data-category="panchakarma">
+                    <img src="images/blog-panchakarma.jpg" class="blog-img" alt="Panchakarma benefits and Ayurvedic therapy" loading="lazy" style="object-fit: cover;">
+                    <div class="blog-content">
+                        <div class="blog-meta"><span><i class="fa-regular fa-folder"></i> Panchakarma</span> <span><i class="fa-regular fa-calendar"></i> Oct 15, 2026</span></div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Panchakarma kya hai aur iske fayde</h3>
+                        <p style="font-size: 0.875rem;">Janiye kaise Panchakarma aapke sharir ko andar se saaf aur swasth banata hai. Iske 5 pramukh fayde...</p>
+                        <a href="#contact" class="text-primary" style="font-weight: 500;">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Blog 2 -->
+                <div class="blog-card reveal-zoom" data-category="health & wellness">
+                    <img src="images/blog-monsoon.jpg" class="blog-img" alt="Ayurvedic tips for staying healthy in monsoon" loading="lazy" style="object-fit: cover;">
+                    <div class="blog-content">
+                        <div class="blog-meta"><span><i class="fa-regular fa-folder"></i> Health & Wellness</span> <span><i class="fa-regular fa-calendar"></i> Sep 28, 2026</span></div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Barsat me swasth rehne ke Ayurvedic tips</h3>
+                        <p style="font-size: 0.875rem;">Monsoon ke mausam me immunity badhane aur bimariyon se bachne ke liye aasan Ayurvedic upay...</p>
+                        <a href="#contact" class="text-primary" style="font-weight: 500;">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Blog 3 -->
+                <div class="blog-card reveal-right" data-category="women's health">
+                    <img src="images/blog-pregnancy.jpg" class="blog-img" alt="Ayurvedic pregnancy care and yoga" loading="lazy" style="object-fit: cover;">
+                    <div class="blog-content">
+                        <div class="blog-meta"><span><i class="fa-regular fa-folder"></i> Women's Health</span> <span><i class="fa-regular fa-calendar"></i> Sep 10, 2026</span></div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Garbhavastha me dhyan rakhne wali baatein</h3>
+                        <p style="font-size: 0.875rem;">Pregnancy ke dauran aahar, vyayam aur mansik shanti ke liye jaruri tips hamare experts dwara...</p>
+                        <a href="#contact" class="text-primary" style="font-weight: 500;">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. CTA Banner -->
+    <section class="container">
+        <div class="cta-banner reveal">
+            <h2>Your Health Deserves the Right Care</h2>
+            <p style="margin-bottom: 2rem;">Book your consultation today and take the first step towards better health.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#contact" class="btn btn-secondary">Book Appointment</a>
+                <a href="tel:9728030109" class="btn btn-outline" style="background: white; color: var(--primary);">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15. Contact -->
+    <section id="contact" class="section">
+        <div class="container contact-layout">
+            <div class="contact-info-wrap reveal-left">
+                <span class="section-label">Contact</span>
+                <h3 class="mb-1">Get In Touch</h3>
+                <div class="info-card" style="text-align: left; margin-bottom: 1rem; padding: 1.5rem;">
+                    <i class="fa-solid fa-location-dot text-primary mb-1" style="font-size: 2rem;"></i>
+                    <h4>Address</h4>
+                    <p>232, Subhash Nagar, Near Civil Hospital Back Gate, Jhajjar, Haryana - 124103</p>
+                </div>
+                <div class="info-card" style="text-align: left; margin-bottom: 1rem; padding: 1.5rem;">
+                    <i class="fa-solid fa-phone text-primary mb-1" style="font-size: 2rem;"></i>
+                    <h4>Phone & Emergency</h4>
+                    <p><a href="tel:9728030109" class="text-heading" style="font-weight: 600;">97280 30109</a></p>
+                </div>
+                <div class="info-card" style="text-align: left; padding: 1.5rem;">
+                    <i class="fa-solid fa-clock text-primary mb-1" style="font-size: 2rem;"></i>
+                    <h4>Working Hours</h4>
+                    <p><strong>Open 24 Hours</strong><br>7 Days a Week</p>
+                </div>
+            </div>
+            
+            <div class="contact-form-wrap reveal-right">
+                <div class="contact-form">
+                    <h3 class="mb-1">Book an Appointment via WhatsApp</h3>
+                    <form id="contactForm">
+                        <div class="grid" style="grid-template-columns: 1fr 1fr; margin-top: 0; gap: 1rem;">
+                            <div class="form-group">
+                                <label for="name" style="display:none;">Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" style="display:none;">Phone</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" style="display:none;">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Email Address (Optional)">
+                        </div>
+                        <div class="form-group">
+                            <label for="service" style="display:none;">Select Service</label>
+                            <select id="service" class="form-control">
+                                <option value="">Select Service</option>
+                                <option value="Ayurvedic Treatment">Ayurvedic Treatment</option>
+                                <option value="Kerala Panchakarma">Kerala Panchakarma</option>
+                                <option value="Physiotherapy">Physiotherapy</option>
+                                <option value="General Consultation">General Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" style="display:none;">Message</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Your Message" style="resize: vertical;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block"><i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> Send via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Google Map Embed -->
+    <section class="section pt-0">
+        <div class="container reveal">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13988.625696541527!2d76.643329!3d28.608351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d79679f1597f7%3A0xcda6b0d9122fb09!2sJhajjar%2C%20Haryana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="AAA Hospital Location"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- 16. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo-box">
+                        <img src="images/logo.png" alt="AAA Hospital - Adiyogi Arogya Avenue" onerror="this.outerHTML='<span style=\'font-weight: 700; font-size: 1.25rem; color: var(--primary); font-family: var(--font-heading);\'><i class=\'fa-solid fa-leaf text-primary\'></i> AAA Hospital</span>'">
+                    </div>
+                    <p>Modern hospital facilities with Ayurveda and Kerala Panchakarma, all under one roof.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#panchakarma">Panchakarma</a></li>
+                        <li><a href="#doctors">Our Doctors</a></li>
+                        <li><a href="#blog">Latest News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact & Hours</h4>
+                    <ul class="footer-links" style="color: var(--light-gray);">
+                        <li style="display: flex; gap: 10px;"><i class="fa-solid fa-location-dot" style="margin-top: 5px;"></i> <span>232, Subhash Nagar, Near Civil Hospital Back Gate, Jhajjar, Haryana - 124103</span></li>
+                        <li style="display: flex; gap: 10px;"><i class="fa-solid fa-phone"></i> <a href="tel:9728030109">97280 30109</a></li>
+                        <li style="display: flex; gap: 10px;"><i class="fa-solid fa-clock"></i> <span>Open 24 Hours, 7 Days a week</span></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for health tips and updates.</p>
+                    <form style="display: flex; margin-top: 1rem;" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                        <input type="email" placeholder="Email Address" style="padding: 0.5rem; width: 100%; border: none; border-radius: var(--radius-sm) 0 0 var(--radius-sm);" aria-label="Email" required>
+                        <button type="submit" class="btn btn-secondary" style="border-radius: 0 var(--radius-sm) var(--radius-sm) 0; min-height: unset; padding: 0.5rem 1rem;"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; <span id="year"></span> AAA Hospital. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action -->
+    <a href="https://wa.me/919728030109" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Sticky Mobile Bottom Bar -->
+    <div class="mobile-bottom-bar">
+        <a href="tel:9728030109" class="btn btn-outline" style="background: white; border-top: none; border-bottom: none; border-left: none;">
+            <i class="fa-solid fa-phone" style="margin-right: 8px;"></i> Call Now
+        </a>
+        <a href="#contact" class="btn btn-primary" style="border: none;">
+            Book Appointment
+        </a>
+    </div>
+
+    <!-- Doctor Modal -->
+    <div id="doctorModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+            <img src="" alt="Doctor" class="modal-img" id="modalDocImg">
+            <div class="modal-body">
+                <h3 id="modalDocName">Dr. Name</h3>
+                <h4 id="modalDocRole">Specialist</h4>
+                <p id="modalDocDesc">Doctor description goes here.</p>
+                <div class="modal-actions">
+                    <a href="#contact" class="btn btn-primary btn-block" id="modalBookBtn">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
+
