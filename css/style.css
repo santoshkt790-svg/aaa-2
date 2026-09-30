@@ -256,10 +256,52 @@ ul {
   padding: 1rem 0;
 }
 
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
 .logo__img {
-  height: 60px; /* 60px mobile */
+  height: 50px;
   width: auto;
   object-fit: contain;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--primary);
+  font-family: var(--font-heading);
+  line-height: 1.1;
+  letter-spacing: 0.3px;
+}
+
+.logo-subtitle {
+  font-size: 0.72rem;
+  color: var(--soft-gold);
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .logo__img {
+    height: 60px;
+  }
+  .logo-title {
+    font-size: 1.25rem;
+  }
+  .logo-subtitle {
+    font-size: 0.8rem;
+  }
 }
 
 /* Desktop Menu (hidden on mobile) */
